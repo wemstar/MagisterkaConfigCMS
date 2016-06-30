@@ -6,7 +6,9 @@ hystrix:
       execution:
         timeout:
           enabled: false
-
+turbine:
+  clusterNameExpression: "'default'"
+  appConfig: edge-server,discovery-server,config-server,simple-micro-service,user-micro-service,document-server
 ---
 
 spring:
@@ -19,5 +21,8 @@ hystrix:
       execution:
         timeout:
           enabled: false
+turbine:
+  clusterNameExpression: "'default'"
+  appConfig: edge-server,discovery-server,config-server,simple-micro-service,user-micro-service,document-server
 
 
